@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - NAVSTIX</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero h1 {
+      font-size: 36px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>NAVSTIX</h1>
+  <p>FORTIS FORTUNA ADIUVAT</p>
+</header>
+
+<nav>
+  <a href="indexweb.html">Beranda</a>
+  <a href="catalog.html">Produk</a>
+  <a href="galeri.html">Galeri</a>
+  <a href="#">Tentang Kami</a>
+  <a href="#">Kontak</a>
+</nav>
+
+<section class="hero">
+  <h1>Seni Gelap, Jiwa Bebas</h1>
+  <p>Galeri kami adalah cermin dari keberanian, simbolisme, dan ketidakterbatasan.</p>
+</section>
+
+<section class="gallery">
+  <img src="cg1.jpg" alt="Ilustrasi 1">
+     <p>Sejarah seni dimulai sejak zaman prasejarah, tepatnya pada era Paleolitik, ketika manusia purba mulai mengekspresikan diri melalui berbagai bentuk seni, seperti lukisan gua, ukiran batu, dan pembuatan alat-alat dari batu dan tulang. </p>
+  <img src="cg2.jpg" alt="Ilustrasi 2">
+        <p>Lukisan gua di berbagai belahan dunia, seperti yang terdapat di Indonesia (gua Maros, Sulawesi Selatan), menjadi bukti kuat bahwa manusia sudah memiliki kemampuan untuk mengekspresikan diri melalui seni sejak ribuan tahun lalu.</p>
+  <img src="cg3.jpg" alt="Ilustrasi 3">
+    <p>Lukisan gua tersebut menggambarkan kehidupan pada saat itu, misalnya hewan-hewan yang diburu atau aktivitas ritual. Selain itu, terdapat pula cetakan telapak tangan yang dianggap sebagai bentuk seni dekoratif pertama.</p>
+  <img src="cg4.jpg" alt="Ilustrasi 4">
+      <p>Karya seni prasejarah berfungsi sebagai bentuk ekspresi diri, komunikasi, dan juga mungkin sebagai bagian dari ritual atau kepercayaan. </p>
+</section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - NAVSTIX</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: crimson;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: radial-gradient(circle, #220000, #000);
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      color: #ccc;
+      font-style: italic;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+    .gallery-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>NAVSTIX</h1>
+  <p>FORTIS FORTUNA ADIUVAT</p>
+</header>
+
+<nav>
+  <a href="indexweb.html">Beranda</a>
+  <a href="catalog.html">Produk</a>
+  <a href="galeri.html">Galeri</a>
+  <a href="#">Tentang Kami</a>
+  <a href="#">Kontak</a>
+</nav>
+
+<section class="hero">
+  <h1>Seni Gelap, Jiwa Bebas</h1>
+  <p>Galeri kami adalah cermin dari keberanian, simbolisme, dan ketidakterbatasan.</p>
+</section>
+
+<section class="gallery">
+  <div class="gallery-item">
+    <img src="ge1.jpg" alt="Ilustrasi 1">
+    <div class="overlay">“Kegelapan adalah ekspresi kebebasan.”</div>
+  </div>
+  <div class="gallery-item">
+    <img src="ge2.jpg" alt="Ilustrasi 2">
+    <div class="overlay">“Tato bukan seni, itu adalah pernyataan.”</div>
+  </div>
+  <div class="gallery-item">
+    <img src="ge3.jpg" alt="Ilustrasi 3">
+    <div class="overlay">“Iblis dalam detail.”</div>
+  </div>
+  <div class="gallery-item">
+    <img src="ge4.jpg" alt="Ilustrasi 4">
+    <div class="overlay">“Bayangan punya suara.”</div>
+  </div>
+</section>
+
+<script>
+  const items = document.querySelectorAll('.gallery-item');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  items.forEach(item => {
+    observer.observe(item);
+  });
+</script>
+<footer style="background-color: #111; color: #fff; text-align: center; padding: 40px 20px; font-size: 14px;">
+  <p style="font-size: 18px; font-style: italic;">"Kegelapan bukan sesuatu yang ditakuti, tapi dimaknai."</p>
+  <div style="margin: 20px 0;">
+    <a href="#" style="margin: 0 10px; color: crimson; text-decoration: none;">Instagram</a>
+    <a href="#" style="margin: 0 10px; color: crimson; text-decoration: none;">WhatsApp</a>
+    <a href="mailto:navstix@email.com" style="margin: 0 10px; color: crimson; text-decoration: none;">Email</a>
+  </div>
+  <p>Ikuti perjalanan kami, dan temukan makna di balik tinta.</p>
+  <p style="color: #666;">© 2025 NAVSTIX. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

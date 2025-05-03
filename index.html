@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakaian Hitam Distro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .product-card p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <h1>NAVSTIX</h1>
+    <p>FORTIS FORTUNA ADIUVAT</p>
+</header>
+
+<!-- Navigation Bar -->
+ 
+    <nav>
+    <a href="index.html">Beranda</a>
+    <a href="catalog.html">Produk</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#kontak">Kontak</a>
+    </nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Temukan Gaya Terbaikmu</h2>
+</section>
+
+<!-- Products Section -->
+<section class="products">
+    <div class="product-card">
+        <img src="images1.jpeg" alt="Produk 1">
+        <h3>Kaos Hitam 1</h3>
+        <p>Kaos hitam berkualitas tinggi untuk penampilan stylish.</p>
+    </div>
+
+    <div class="product-card">
+        <img src="images2.jpg" alt="Produk 2">
+        <h3>Jaket Hitam</h3>
+        <p>Jaket hitam yang nyaman dan stylish untuk segala cuaca.</p>
+    </div>
+
+    <div class="product-card">
+        <img src="images3.jpg" alt="Produk 3">
+        <h3>Celana Hitam</h3>
+        <p>Celana hitam dengan desain modern dan nyaman dipakai.</p>
+    </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2025 NAVSTIX</p>
+    <p><a href="#">Kebijakan Privasi</a> | <a href="#">Syarat & Ketentuan</a></p>
+</footer>
+
+</body>
+<!-- Contact Section with Visual Effects -->
+
+<!-- Footer Closing -->
+<div class="final-footer">
+  <p>&copy; 2025 NAVSTIX | Fashion Dalam Gaya Gelap</p>
+</div>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kontak - NAVSTIX</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .kontak {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .kontak h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid gray;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .kontak input,
+    .kontak textarea {
+      width: 90%;
+      max-width: 300px;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #222;
+      border: 1px solid #555;
+      color: white;
+      border-radius: 3px;
+    }
+
+    .kontak button {
+      background-color: #444;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    .penutup {
+      background-color: #111;
+      color: gray;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="kontak">
+    <h2>Hubungi Kami</h2>
+    <form>
+      <input type="text" placeholder="Nama"><br>
+      <input type="email" placeholder="Email"><br>
+      <textarea rows="4" placeholder="Pesan Anda"></textarea><br>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <div class="penutup">
+    &copy; 2025 NAVSTIX - Tetap Gaya dalam Hitam
+  </div>
+
+</body>
+</html>
