@@ -1,2 +1,0 @@
-# webnavstix
-Hi there!
